@@ -56,25 +56,25 @@ public class MonthFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootview = inflater.inflate(R.layout.fragment_month, container, false);
-        ArrayList<DateItem> Dates = new ArrayList<>();
-
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(myear, mmonth,1);
-
-        int lastday = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
-        int startday = calendar.get(calendar.DAY_OF_WEEK);
-        int daySize = lastday + startday - 1;
-
-        for(int i=0; i<startday; i++)
-            Dates.add(new DateItem(""));
-        for(int i=startday-1; i<daySize; i++)
-            Dates.add(new DateItem("" + (i - startday + 2)));
-        for(int i=daySize; i<42; i++)
-            Dates.add(new DateItem(""));
-
-        GridViewAdapter adapter = new GridViewAdapter(getActivity(), R.layout.item, Dates);
-        GridView gridview = (GridView) rootview.findViewById(R.id.gridview);
-        gridview.setAdapter(adapter);
-        return inflater.inflate(R.layout.fragment_month, container, false);
+//        ArrayList<DateItem> Dates = new ArrayList<>();
+//
+//        Calendar calendar = Calendar.getInstance();
+//        calendar.set(myear, mmonth,1);
+//
+//        int lastday = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
+//        int startday = calendar.get(calendar.DAY_OF_WEEK);
+//        int daySize = lastday + startday - 1;
+//
+//        for(int i=0; i<startday; i++)
+//            Dates.add(new DateItem(""));
+//        for(int i=startday-1; i<daySize; i++)
+//            Dates.add(new DateItem("" + (i - startday + 2)));
+//        for(int i=daySize; i<42; i++)
+//            Dates.add(new DateItem(""));
+//
+//        GridViewAdapter adapter = new GridViewAdapter(getActivity(), R.layout.item, Dates);
+//        GridView gridview = (GridView) rootview.findViewById(R.id.gridview);
+//        gridview.setAdapter(adapter);
+        return rootview;
     }
 }

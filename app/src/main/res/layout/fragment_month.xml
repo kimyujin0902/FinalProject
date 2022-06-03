@@ -6,12 +6,17 @@
     tools:context=".MonthFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <!--
     <GridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:numColumns="7"
         android:verticalSpacing="40dp"
-        android:stretchMode="columnWidth"/>>
+        android:stretchMode="columnWidth"/>> -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hello World!" />
 
 </FrameLayout>
